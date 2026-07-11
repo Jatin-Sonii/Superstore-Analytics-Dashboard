@@ -177,4 +177,3 @@ elif page == "Page 4 — Product Demand Segments":
                 st.success(f"**Operational Mandate:**\n\n{details['action']}")
             
     st.markdown("---")
-    st.info("Methodology Background: Portfolio maps are automatically generated via a multi-dimensional K-Means clustering model processing historical transactional velocity, annual operational growth rates, and baseline monthly demand variances.")
