@@ -77,7 +77,7 @@ elif page == "Page 2 — Forecast Explorer":
     X = ml_df.drop(columns=['Sales'])
     y = ml_df['Sales']
 
-    model = XGBRegressor(n_estimators=100, learning_rate=0.05, random_state=42)
+    model = XGBRegressor(n_estimators=100, learning_rate=0.05, random_state=42, n_jobs=1)
     model.fit(X, y)
 
     current_history = list(ml_df['Sales'].values)
